@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule Classes - [R=404,L]
+RewriteRule Constants - [R=404,L]
+RewriteRule Logs - [R=404,L]
+RewriteRule Static - [R=404,L]
+
+RewriteRule ^r/(.*)$ ./index.php?s=$1
